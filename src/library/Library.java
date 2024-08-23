@@ -128,6 +128,7 @@ public class Library {
             return;
         }
 
+        //
         book.setStatus(false);
         borrowedBooks.add(book);
         borrowedBooksByReader.put(readerId, borrowedBooks);
