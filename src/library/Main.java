@@ -55,7 +55,13 @@ public class Main {
         System.out.println("\nbook1 Return Ediliyor.");
         library.returnBook(reader.getId(), book1);
 
-        //book4 remove ediliyor.
+        // book4 remove ediliyor.
+        System.out.println("\nbook4 (Some Magazine) remove ediliyor.");
+        library.removeBookFromLib(book4.getBookId());
+
+        // book4'ün remove u sonrası tüm kitaplar listeleniyor.
+        System.out.println("\nTüm kitaplar listeleniyor.");
+        library.listBooksInLib();
 
 
         //Librarian oluşturulup override methodu çalıştırılıyor.
